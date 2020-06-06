@@ -30,6 +30,48 @@
   #page-home main a {
     width: 70%;
   }
+
+  #page-search-results .cards {
+    grid-template-columns: 1fr;
+  }
+
+  #page-search-results .cards img {
+    height: 250px;
+  }
+
+  #page-create-point .field-group {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  form .field-group .field + .field {
+    margin-left: 0px;
+  }
+
+  .items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .items-grid li {
+    width: 145px;
+    font-size: 15px;
+    height: 160px;
+  }
+
+  .btn-create {
+    margin-left: 30px;
+  }
+
+  form {
+    width: 100%;
+    padding: 32px;
+  }
+
+  form input,
+  form select {
+    padding: 16px;
+  }
 }
 
 @media (min-width: 1700px) {
@@ -41,5 +83,13 @@
 @media (max-height: 760px) {
   #page-home {
     background-position-y: 200px;
+  }
+  #page-create-point form .field-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  #page-create-point form .field-group .field + .field {
+    margin-left: 0;
   }
 }
