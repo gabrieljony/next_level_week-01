@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/create-point.css" />
     <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
     <link rel="stylesheet" href="styles/itens-coleta.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
   </head>
@@ -26,7 +27,7 @@
         </a>
       </header>
 
-      <form action="">
+      <form action="/savepoint" method="POST">
         <h1>Cadastro do ponto de coleta</h1>
 
         <fieldset>
@@ -136,6 +137,19 @@
       </form>
     </div>
 
-    <script src="scripts/create-point.js"></script>
+    {% if saved %}
+    <div id="modal" class="point">
+      <div class="content">
+        <img src="assets/icones/check.svg" alt="Cadastrado Concluído" />
+        <h1>Cadastrado Concluído</h1>
+      </div>
+    </div>
+
+    <script>
+      setTimeout(() => {
+        window.location = "/";
+      }, 2000);
+    </script>
+    {% endif %}
   </body>
 </html>
