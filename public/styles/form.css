@@ -49,6 +49,7 @@
 }
 
 #page-create-point form .field input[type="text"],
+#page-create-point form .field input[type="url"],
 #page-create-point form .field input[type="email"],
 #page-create-point form .field input[type="number"] {
   flex: 1;
