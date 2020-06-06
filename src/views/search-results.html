@@ -31,7 +31,11 @@
         <div class="cards">
           {% for place in places %}
           <div class="card">
+            {% if place.image %}
             <img src="{{ place.image }}" alt="{{ place.name }}" />
+            {% else %}
+            <img src="assets/icones/no-image.png" alt="Não possui imagem" />
+            {% endif %}
             <h1>{{ place.bane }}</h1>
             <h3>{{ place.items }}</h3>
             <p>
