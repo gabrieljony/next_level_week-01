@@ -1,20 +1,7 @@
 {
   "name": "next_level_week-01",
-  "version": "1.0.0",
-  "description": "<h1 align=\"center\">\r     Next Level Week | NLW#1\r </h1>",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gabrieljony/next_level_week-01.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gabrieljony/next_level_week-01/issues"
-  },
-  "homepage": "https://github.com/gabrieljony/next_level_week-01#readme"
+  }
 }
