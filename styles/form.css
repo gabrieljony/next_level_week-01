@@ -101,6 +101,7 @@
 /* button */
 
 #page-create-point form button {
+  margin-top: 16px;
   width: 260px;
   height: 56px;
   background: var(--green);
